@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body id="body">
+    <!-- <ul id="element" data="value">
+        <li class="list-item">First Elemnent</li>
+        <li  class="list-item">Second element</li>
+        <li  class="list-item">Third Element</li>
+    </ul> -->
+
+    <!-- ul DOM manipulation -->
+
+    <div class="allDivs">First Div</div>
+    <script>
+        // const allDivs= document.getElementsByClassName("allDivs")
+        // console.log(allDivs)
+
+        // const allDivs= document.querySelectorAll("allDivs")
+        // console.log(allDivs)
+
+    </script>
+
+
+
+    <!-- <div id="firstDiv" class ='allDivs'>Second Div</div> -->
+    <button id="clickBtn">Click</button>
+
+    <!-- <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table> -->
+
+    <script>
+        //root node
+    //   console.log(document.documentElement)
+    //   console.log(document.body)
+    //   console.log(document.head)
+      
+
+    //   console.log(document.body.childNodes)
+    //   console.log(document.body.firstChild)
+    //   console.log(document.body.lastChild)
+    //   console.log(document.body.firstElementChild)
+    //   console.log(document.body.lastElementChild)
+    //   console.log(document.body.children)
+
+    //   for(node of document.body.children){
+    //     //.childNodes also same 
+    //     console.log(node)
+
+    //   }
+      
+
+    //   const childrenArr = Array.from(document.body.children)
+    //   console.log(childrenArr);
+    //   const ulTag= console.log(document.body.children[0])
+    //   console.log(ulTag.nextElementSibling)
+
+    //   const tabTag = document.body.children[1];
+    //   console.log(tabTag.tBodies[0].rows[0].cells[0].textContent)
+    //   console.log(tabTag.tBodies[0].rows[0].cells[1].style="background-color:blue;")
+
+    //id search 
+    // console.log(element)
+    // element.style.background = 'red';
+    
+
+    // console.log();
+
+    // const ulID= document.getElementById("element")
+    // console.log(ulID)
+    // ulID.style.backgroundColor = "red"
+
+    // listItem= document.getElementsByClassName("list-item");
+    // console.log(listItem)
+
+    // console.log(document.getElementsByTagName("table"))
+
+    // const listItem = document.querySelectorAll('.list-item')
+    // console.log(listItem)
+
+    // const listLast = document.querySelectorAll('ul>li:last-child')
+    // console.log(listLast)
+    // const listNth = document.querySelectorAll('ul>li:nth-child(1)')
+    // console.log(listNth[0].textContent)
+
+    
+        // console.log(allDivs)
+
+        // console.log(element.id)
+        // console.log(element.data)
+
+        // console.log(element.getAttribute('data'))
+        // console.log(element.setAttribute('order-placed','pending'))
+        // console.log(element.getAttribute('order-placed'))
+        // console.log(element.hasAttribute('order-placed'))
+
+        // console.log(element.attributes)
+
+        //create and removing and updating the node element 
+        // const newDiv=document.createElement('div')
+        // const newText = document.createTextNode('Hello World')
+        // newDiv.appendChild(newText)
+        // body.append(newDiv)
+
+        // body.prepend(newDiv)
+
+        // firstDiv.replaceWith(newDiv)
+
+        // newDiv.remove()
+
+        //events
+
+        // clickBtn.onclick= function(){
+        //     alert('thanks')
+        // }
+
+        // clickBtn.onclick=callMe
+
+
+        
+        function callMe(event){
+            console.log(this)
+            console.log(event.type)
+            console.log(event.currentTarget)
+            console.log(event.clientY)
+            console.log(event.clientX)
+
+            alert('thanks for watching')
+        }
+        clickBtn.addEventListener('click',callMe)
+        // clickBtn.addEventListener('click',function(){
+        //     alert('thanks')
+        // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     
+
+     
+
+    </script>
+
+    
+</body>
+</html>

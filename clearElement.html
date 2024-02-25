@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <ol id="elem">
+        <li>Hello</li>
+        <li>World</li>
+    </ol>
+
+    <script>
+        function clear(elem) { /* your code */ 
+        
+            // let element= document.getElementById('elem')
+            // element.remove()
+            while (elem.childNodes.length > 0) {
+                elem.childNodes[0].remove();
+            }
+
+
+        
+        }
+
+        clear(elem); // clears the list
+    </script>
+</body>
+
+</html>
